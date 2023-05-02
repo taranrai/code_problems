@@ -26,7 +26,7 @@ def to_mod_list(employee_list):
       list - A list of strings consisting of name + department.
    """
    ### WRITE SOLUTION CODE HERE
-   new_list = map(mod, employee_list)
+   new_list = list(map(mod, employee_list))
 
    return new_list
 
@@ -54,6 +54,7 @@ def generate_usernames(mod_list):
 
    updated_list = [x.replace(" ", "_") for x in mod_list]
 
+   return updated_list
 
 def map_id_to_initial(employee_list):
    """ Maps employee id to first initial
@@ -72,8 +73,9 @@ def map_id_to_initial(employee_list):
    """
    ### WRITE SOLUTION CODE HERE
 
-   new_dict = {i['id'] : i['name'][0] for i in employee_list}
- 
+   new_dict = {i['name'][0] : i['id'] for i in employee_list}
+   
+   return new_dict
 
 def main():
    mod_emp_list = to_mod_list(employee_list)
