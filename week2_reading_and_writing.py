@@ -19,7 +19,6 @@ def read_file(file_name):
         print(contents)
     return contents  
 
-    raise NotImplementedError()
 
 def read_file_into_list(file_name):
     """ Reads in a file and stores each line as an element in a list
@@ -44,7 +43,6 @@ def read_file_into_list(file_name):
             line = f.readline()
     return line_list
 
-    raise NotImplementedError()
 
 def write_first_line_to_file(file_contents, output_filename):
     """ Writes the first line of a string to a file.
@@ -69,7 +67,6 @@ def write_first_line_to_file(file_contents, output_filename):
     with open(output_filename, "w") as f:
         f.write(first_line)
 
-    raise NotImplementedError()
 
 
 def read_even_numbered_lines(file_name):
@@ -97,7 +94,6 @@ def read_even_numbered_lines(file_name):
             line_no += 1
     return even_list
 
-    raise NotImplementedError()
 
 def read_file_in_reverse(file_name):
     """ Reads a file and returns a list of the lines in reverse order
@@ -124,7 +120,6 @@ def read_file_in_reverse(file_name):
     print(my_list)
     return my_list
 
-    raise NotImplementedError()
 
 '''
 Here are some sample commands to help you run/test your implementations.
