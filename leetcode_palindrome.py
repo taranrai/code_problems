@@ -1,12 +1,12 @@
 '''
 Runtime
-55 ms
+44 ms
 Beats
-67.88%
+91.54%
 Memory
-13.3 MB
+13.2 MB
 Beats
-65.11%
+99.23%
 '''
 
 
@@ -16,8 +16,7 @@ class Solution(object):
         :type x: int
         :rtype: bool
         """
-        x_str = str(x)
-        if x_str == x_str[::-1]:
+        if str(x) == str(x)[::-1]:
             return True
         else:
             return False
